@@ -66,7 +66,15 @@ fun RallyApp() {
                 startDestination = Overview.route,
                 modifier = Modifier.padding(innerPadding)
             ) {
-
+                composable(route = Overview.route) {
+                    Overview.screen()
+                }
+                composable(route = Accounts.route) {
+                    Accounts.screen()
+                }
+                composable(route = Bills.route) {
+                    Bills.screen()
+                }
             }
         }
     }
