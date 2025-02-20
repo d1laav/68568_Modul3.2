@@ -92,3 +92,5 @@ fun NavHostController.navigateSingleTopTo(route: String) =
 private fun NavHostController.navigateToSingleAccount(accountType: String) {
     this.navigateSingleTopTo("${SingleAccount.route}/$accountType")
 }
+
+
